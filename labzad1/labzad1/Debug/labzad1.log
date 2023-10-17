@@ -1,0 +1,6 @@
+﻿  labzad1.c
+c:\users\burekman\desktop\gitshit\strukturepodatakahrvojebingula\labzad1\labzad1\labzad1.c(10): warning C4005: 'EXIT_SUCCESS': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdlib.h(48): note: see previous definition of 'EXIT_SUCCESS'
+c:\users\burekman\desktop\gitshit\strukturepodatakahrvojebingula\labzad1\labzad1\labzad1.c(24): error C2198: 'fgets': too few arguments for call
+c:\users\burekman\desktop\gitshit\strukturepodatakahrvojebingula\labzad1\labzad1\labzad1.c(26): error C2143: syntax error: missing ';' before '}'
+c:\users\burekman\desktop\gitshit\strukturepodatakahrvojebingula\labzad1\labzad1\labzad1.c(46): error C2143: syntax error: missing ';' before 'return'
