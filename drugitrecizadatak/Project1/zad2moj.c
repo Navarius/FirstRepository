@@ -30,6 +30,7 @@ int addBehindTarget(Position P);
 int addInFrontOfTarget(Position P);
 int writeListInFile(Position P);
 int readListFromFile(Position P);
+int deleteTheList(Position P);
 
 int main() {
 
@@ -40,7 +41,7 @@ int main() {
 	Head2.next = NULL;
 	
 	menu(&Head,&Head2);
-
+	deleteTheList(&Head);
 	return 0;
 }
 
@@ -82,18 +83,38 @@ int menu(Position Head,Position Head2)
 			}
 
 	}
+	
+	return EXIT_SUCCESS;
+}
+int deleteTheList(Position P) 
+{
+	Position temp = P;
+	Position q = NULL;
+	
+	if (!temp->next)
+	{
+		return EXIT_FAILURE;
+	}
+
+	while (temp->next != NULL)
+	{
+		q=temp->next;
+		temp->next = q->next;
+
+		free(q);
+	}
 	return EXIT_SUCCESS;
 }
 int addPerson(Position P, char* name, char* surname, int birthYear) 
 {
 	Position q = NULL;
 	q = (Position)malloc(sizeof(person));
+	if (q == NULL)
+		return EXIT_FAILURE;
+
 	strcpy(q->name, name);
 	strcpy(q->surname, surname);
 	q->birthYear = birthYear;
-	
-	if (q == NULL)
-		return EXIT_FAILURE;
 	
 	while (P->next != NULL)
 		P = P->next;
@@ -172,7 +193,7 @@ int addInFrontOfTarget(Position P)
 
 int addBehindTarget(Position P) 
 {
-	char prez[MAX_SIZE];
+	char prez[MAX_SIZE] = { 0 };
 	printf("\nAfter which surname would you like to add new person?: ");
 	scanf("%s", &prez);
 
@@ -197,7 +218,6 @@ Position createPerson()
 	int birthyear = 0;
 
 	newPerson = (Position)malloc(sizeof(person));
-
 	if (newPerson == NULL) {
 		printf("Failure creating newPerson");
 	}
@@ -250,13 +270,16 @@ Position findPerson(Position P)
 	printf("\nEnter the surname: ");
 	scanf("%s", &prez);
 
+	if (!P)
+	{
+		return NULL;
+	}
 
-
-	while (strcmp(P->surname, prez)!=0){
+	while (P!=NULL &&strcmp(P->surname, prez)!=0){
 		P = P->next;
 	}
 
-	if (strcmp(P->surname, prez))
+	if (strcmp(P->surname, prez)!=0)
 	{
 		return NULL;
 	}
@@ -315,5 +338,3 @@ int printAll(Position P)
 
 	return 0;
 }
-
-
