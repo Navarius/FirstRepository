@@ -1,0 +1,5 @@
+﻿  deveti.c
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\devetizadatak\devetizadatak\deveti.c(37,15): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\devetizadatak\devetizadatak\deveti.c(56,3): warning C4033: 'levelOrder' must return a value
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\devetizadatak\devetizadatak\deveti.c(74): warning C4715: 'levelOrder': not all control paths return a value
+  devetizadatak.vcxproj -> C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\devetizadatak\Debug\devetizadatak.exe
