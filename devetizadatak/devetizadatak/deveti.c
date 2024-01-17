@@ -2,6 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+#define SUCCESS 5
 /*9. Zadan je niz brojeva 2, 5, 7, 8, 11, 1, 4, 2, 3, 7 koji su spremljeni u èvorove binarnog stabla.
 a) Napisati funkciju insert koja dodaje element u stablo tako da se pozivima te funkcije za
 sve element zadanog niza brojeva stvori stablo kao na slici Slika 1. Funkcije vraæa
@@ -29,12 +30,18 @@ Position createNode(int value);
 Position insertNumber(Position root, int value);
 int levelOrder(Position root);
 int IspisPreorder(Position root);
+int replace(Position root);
+int random();
+int PrintInOrder_InFile(Position root, FILE* fptr);
+int IspisInorder(Position root);
 
 int main()
 {
+
 	Position root = NULL;
 	Position rootRand = NULL;
 	srand(time(0));
+	FILE* fptr = fopen("Zadatak9.txt", "w");
 	root = insertNumber(root, 2);
 	insertNumber(root, 5);
 	insertNumber(root, 7);
@@ -46,9 +53,45 @@ int main()
 	insertNumber(root, 3);
 	insertNumber(root, 7);
 
-	IspisPreorder(root);
-	//levelOrder(root);
+	//IspisPreorder(root);
+	printf("Ispis inorder: \n");
+	IspisInorder(root);
+	printf("\n");
+	printf("LevelOrder: \n");
+	levelOrder(root);
+	if (!fptr) {
+		printf("File didn't open!");
+		return EXIT_FAILURE;
+	}
+	else {
+		fprintf(fptr, "Inorder ispis a): \n");
+		PrintInOrder_InFile(root, fptr);
+		printf("Inorder print success!");
+	}
 
+	replace(root);
+	levelOrder(root);
+
+	fprintf(fptr, "\nInorder ispis b): \n");
+	PrintInOrder_InFile(root, fptr);
+	printf("\n");
+	//funkcija za random u mainu       
+	printf("Random brojevi u stablu!");
+
+	for (int i = 0; i < 10; i++) {
+		int value = (rand() % 81) + 10;
+		rootRand = insertNumber(rootRand, value);
+	}
+	/*printf("Random brojevi u stablu!");
+	rootRand = insertNumber(rootRand, random());
+	for (int i = 0; i < 10; i++) {
+		insertNumber(rootRand, random());
+	}*/
+	levelOrder(rootRand);
+
+
+
+	fclose(fptr);
 	return 0;
 }
 int levelOrder(Position root) {
@@ -115,5 +158,40 @@ int IspisPreorder(Position root) {
 		IspisPreorder(root->left);
 		IspisPreorder(root->right);
 	}
+	return EXIT_SUCCESS;
+}
+int replace(Position root) {
+	if (root == NULL) {
+		return 0;
+	}
+	int leftvalue = replace(root->left);
+	int rightvalue = replace(root->right);
+	int origValue = root->value;
+
+	root->value = leftvalue + rightvalue;
+
+	return origValue + root->value;
+}
+int random() {
+	return  (rand() % 81) + 10;
+}
+int PrintInOrder_InFile(Position root, FILE* fptr) {
+
+	if (root != NULL) {
+		PrintInOrder_InFile(root->left, fptr);
+		fprintf(fptr, "%d ", root->value);
+		PrintInOrder_InFile(root->right, fptr);
+	}
+	return SUCCESS;
+}
+int IspisInorder(Position root) {
+
+	if (root) {
+		IspisInorder(root->left);
+		printf("%d ", root->value);
+		IspisInorder(root->right);
+	}
+	//printf("\n");
+
 	return EXIT_SUCCESS;
 }
