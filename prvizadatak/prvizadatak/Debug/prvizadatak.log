@@ -1,6 +1,0 @@
-﻿  zad1.c
-C:\Users\BurekMan\Desktop\VSC3\prvizadatak\prvizadatak\zad1.c(79,23): warning C4047: 'return': 'Student *' differs in levels of indirection from 'int'
-C:\Users\BurekMan\Desktop\VSC3\prvizadatak\prvizadatak\zad1.c(96,168): warning C4474: 'printf' : too many arguments passed for format string
-C:\Users\BurekMan\Desktop\VSC3\prvizadatak\prvizadatak\zad1.c(96,168): message : placeholders and their parameters expect 4 variadic arguments, but 5 were provided
-C:\Users\BurekMan\Desktop\VSC3\prvizadatak\prvizadatak\zad1.c(98): warning C4716: 'showStudents': must return a value
-  prvizadatak.vcxproj -> C:\Users\BurekMan\Desktop\VSC3\prvizadatak\Debug\prvizadatak.exe

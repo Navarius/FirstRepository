@@ -1,0 +1,8 @@
+﻿  sedmi.c
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\sedmizadatak\sedmizadatak\sedmi.c(91,36): warning C4047: 'function': 'PositionLevel' differs in levels of indirection from 'PositionLevel *'
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\sedmizadatak\sedmizadatak\sedmi.c(91,26): warning C4024: 'pop': different types for formal and actual parameter 1
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\sedmizadatak\sedmizadatak\sedmi.c(139,52): warning C4047: '=': 'PositionDirectory' differs in levels of indirection from 'PositionDirectory (__cdecl *)(char *)'
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\sedmizadatak\sedmizadatak\sedmi.c(141,21): warning C4047: 'return': 'PositionDirectory' differs in levels of indirection from 'PositionDirectory (__cdecl *)(char *)'
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\sedmizadatak\sedmizadatak\sedmi.c(192,14): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\sedmizadatak\sedmizadatak\sedmi.c(197): warning C4715: 'push': not all control paths return a value
+  sedmizadatak.vcxproj -> C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\sedmizadatak\Debug\sedmizadatak.exe

@@ -1,0 +1,3 @@
+﻿  petizad.c
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\petizadatak\petizadatak\petizad.c(50,20): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
+  petizadatak.vcxproj -> C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\petizadatak\Debug\petizadatak.exe

@@ -1,0 +1,4 @@
+﻿  deseti.c
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\desetizadatak\desetizadatak\deseti.c(301,20): warning C4013: 'printCityTreeByPop' undefined; assuming extern returning int
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\desetizadatak\desetizadatak\deseti.c(314): warning C4716: 'printCityTreeByPop': must return a value
+  desetizadatak.vcxproj -> C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\desetizadatak\Debug\desetizadatak.exe

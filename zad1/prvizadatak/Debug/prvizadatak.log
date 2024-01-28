@@ -1,0 +1,4 @@
+﻿  zad1.c
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\prvizadatak\prvizadatak\zad1.c(78,29): warning C4047: 'return': 'Student *' differs in levels of indirection from 'int'
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\prvizadatak\prvizadatak\zad1.c(99): warning C4716: 'showStudents': must return a value
+  prvizadatak.vcxproj -> C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\prvizadatak\Debug\prvizadatak.exe

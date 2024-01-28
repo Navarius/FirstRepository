@@ -1,4 +1,0 @@
-﻿  deseti.c
-C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\desetizadatak\desetizadatak\deseti.c(101,34): warning C4047: 'return': 'CountryPosition' differs in levels of indirection from 'int'
-C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\desetizadatak\desetizadatak\deseti.c(286): warning C4716: 'printCityList': must return a value
-  desetizadatak.vcxproj -> C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\desetizadatak\Debug\desetizadatak.exe

@@ -1,0 +1,5 @@
+﻿  jedanaestizad.c
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\zad11\jedanaesti\jedanaesti\jedanaestizad.c(106,20): warning C4013: 'printCityTreeByPop' undefined; assuming extern returning int
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\zad11\jedanaesti\jedanaesti\jedanaestizad.c(319): warning C4716: 'printCityTreeByPop': must return a value
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\zad11\jedanaesti\jedanaesti\jedanaestizad.c(410): warning C4716: 'printAllCountriesFromHash': must return a value
+  jedanaesti.vcxproj -> C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\zad11\jedanaesti\Debug\jedanaesti.exe

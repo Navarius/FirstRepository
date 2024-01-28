@@ -1,0 +1,4 @@
+﻿  osmi.c
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\osmizadatak\osmizadatak\osmi.c(193,9): warning C4033: 'levelOrder' must return a value
+C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\osmizadatak\osmizadatak\osmi.c(216): warning C4715: 'levelOrder': not all control paths return a value
+  osmizadatak.vcxproj -> C:\Users\BurekMan\Desktop\VSC3\StrukturePodatakaHrvojeBingula\StrukturePodatakaHrvojeBingula\osmizadatak\x64\Debug\osmizadatak.exe
